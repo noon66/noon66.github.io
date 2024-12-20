@@ -3,19 +3,103 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>noon66's Website</title>
+  <title>แบบสอบถาม</title>
 </head>
 <body>
-  <a href="index.html">Hoem</a> |
-  <a href="About.html">About</a> |
-  <a href="Contact.html">Contact</a> |
-  <h1>Home Page</h1>
-  <h2>Home Page</h2>
-  <h3>Home Page</h3>
-  <h4>Home Page</h4>
-  <h5>Home Page</h5>
-  <h6>Home Page</h6>
   <hr>
-  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas velit, natus rem voluptatem consequatur ducimus alias, enim sunt eum ullam earum nostrum illum provident, quae culpa ex maiores aliquid cum!</p>
+  <h1 style="text-align: center;">แบบสอบถาม</h1>
+  <hr>
+ 
+  <form>
+    <table align="center" style="background-color: #cdf5d8; padding: 50px; border: 1px solid #000; width: 100%; max-width: 600px;">
+      <tr>
+        <td colspan="2" style="font-weight: bold; font-size: 18px;">
+          ข้อมูลผู้ตอบแบบสอบถาม
+        </td>
+      </tr>
+      <tr>
+        <td><b>ชื่อ-นามสกุล:</b></td>
+        <td><input type="text" name="fullname" style="width: 100%;"></td>
+      </tr>
+      <tr>
+        <td><b>รหัสนักศึกษา:</b></td>
+        <td><input type="text" name="stdid" style="width: 100%;"></td>
+      </tr>
+      <tr>
+        <td><b>เพศ:</b></td>
+        <td>
+          <input type="radio" name="gender" value="male" checked> ชาย
+          <input type="radio" name="gender" value="female"> หญิง
+        </td>
+      </tr>
+      <tr>
+        <td><b>สังกัดคณะ:</b></td>
+        <td>
+          <select name="faculty" size="7" style="width: 100%;">
+            <option value="science">วิทยาศาสตร์</option>
+            <option value="science">วิทยาการคอมพิวเตอร์</option>
+            <option value="arts">ครุศาสตร์</option>
+            <option value="engineering">บริหารธุรกิจและการจัดการ</option>
+            <option value="medicine">มนุษย์ศาสตร์</option>
+            <option value="education">เทคโนโลยีอุตสาหกรรม</option>
+            <option value="business">เกษตรศาสตร์</option>
+            <option value="law">พยาบาลศาสตร์</option>
+            <option value="law">สาธารณสุขศาสตร์</option>
+            <option value="law">แพทย์แผนไทยและทางเลือก</option>
+            <option value="law">นิติศาสตร์</option>
+          </select>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2"><hr></td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <b>แม่สีที่ชื่นชอบ:</b>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <input type="checkbox" name="favorite_colors" value="red"> แดง
+          <input type="checkbox" name="favorite_colors" value="blue"> น้ำเงิน
+          <input type="checkbox" name="favorite_colors" value="green"> เขียว 
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <b>ผลไม้ที่ชื่นชอบ:</b>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <input type="checkbox" name="favorite_fruits" value="apple"> มังคุด
+          <input type="checkbox" name="favorite_fruits" value="banana"> กล้วย
+          <input type="checkbox" name="favorite_fruits" value="orange"> ส้ม
+          <input type="checkbox" name="favorite_fruits" value="orange"> มะม่วง
+          <input type="checkbox" name="favorite_fruits" value="orange"> แอปเปิ้ล
+          <input type="checkbox" name="favorite_fruits" value="orange"> ลิ่นจี่
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <b>อาหารที่ชื่นชอบ:</b>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2">
+          <input type="checkbox" name="favorite_foods" value="pizza"> ส้มตำ
+          <input type="checkbox" name="favorite_foods" value="sushi"> ก๋วยจั๊บ  
+          <input type="checkbox" name="favorite_foods" value="noodles"> ก๋วยเตี๋ยว
+          <input type="checkbox" name="favorite_foods" value="noodles"> ราดหน้า
+          <input type="checkbox" name="favorite_foods" value="noodles"> แกงเขียวหวาน
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" style="text-align: center;">
+          <button type="submit">บันทึก</button>
+        </td>
+      </tr>
+    </table>
+  </form>
 </body>
 </html>
